@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <title>Applet 2 - Leaflet Map</title>
     <style>
+
         .applet-container{
             margin-top: 1rem;
             margin-left: 2rem;
@@ -56,7 +57,7 @@
 </nav>
 
 <body>
-  
+
     <div class="applet-container">
         <h3>Leaflet Map Basics</h3>
         <div id="map"></div>
@@ -97,11 +98,11 @@ class LeafletMap {
 
 const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
 
-/*
+
 myMap.addMarker(8.359735, 124.869206, 'CCS Faculty Office');
 myMap.addMarker(8.359639,124.869179, 'CCS Laboratory 1');
 myMap.addMarker(8.359554,124.869153, 'CCS Laboratory 2');
-*/
+
 
 myMap.loadMarkersFromJson('applet-2.json');
 

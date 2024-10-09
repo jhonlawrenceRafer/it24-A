@@ -1,0 +1,26 @@
+[
+    {
+        "latitude": 8.360238,
+        "longitude" : 124.867470,
+        "message" : "SC building"
+    },
+      
+    {
+        "latitude": 8.359639,
+        "longitude" : 124.869179,
+        "message" : "Laboratory 1"
+    },
+
+    
+    {
+         "latitude": 8.359639,
+        "longitude" : 124.869153,
+        "message" : "Laboratory 2"
+    },
+
+    {
+        "latitude": 8.359134,
+        "longitude" : 124.868537,
+        "message" : "BA building"
+    }
+]

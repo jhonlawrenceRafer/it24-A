@@ -41,6 +41,18 @@ class LeafletMap {
         }).addTo(this.map);
     }
     
-   
+    addMarker(lat, long, message){
+        const marker = L.marker([lat, long]).addTo(this.map)
+        this.markerCounts[message] = (this.markerCounts[message] || 0) + 1;
+        this.updateMarkerPopup(marker, message);
+        this.markers.push(marker); 
+        marker.on('click', () => {
+            this.markerCounts[message]++;
+            this.updateMarkerPopup(marker, message);
+        });
+
+        this.markers.push(marker);
+    }
+
    
 }

@@ -96,6 +96,20 @@ class LeafletMap {
     }
 
 
+    dataSc() {
+        this.addMarker(8.360238, 124.867470, 'SC building');
+        this.attendanceCountSC++; 
+        this.loggedData.push('SC building');
+        this.updateLogDisplay();
+    }
+
+    dataBa() {
+        this.addMarker(8.359134, 124.868537, 'BA building');
+        this.attendanceCountBA++;
+        this.loggedData.push('BA building');
+        this.updateLogDisplay();
+    }
     
+  
 
 }

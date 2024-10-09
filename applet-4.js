@@ -110,6 +110,20 @@ class LeafletMap {
         this.updateLogDisplay();
     }
     
-  
+    dataLab1() {
+        this.addMarker(8.359639, 124.869179, 'CCS Laboratory 1');
+        this.attendanceCountLab1++;
+        this.loggedData.push('CCS Laboratory 1');
+        this.updateLogDisplay();
+    }
+
+    dataLab2() { 
+        this.addMarker(8.359500, 124.869100, 'Laboratory 2');
+        this.attendanceCountLab2++;
+        this.loggedData.push('Laboratory 2');
+        this.updateLogDisplay();
+    }
+
+   
 
 }

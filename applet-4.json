@@ -8,7 +8,14 @@
     {
         "latitude": 8.359639,
         "longitude" : 124.869179,
-        "message" : "CSS Laboratory 1"
+        "message" : "Laboratory 1"
+    },
+
+    
+    {
+         "latitude": 8.359639,
+        "longitude" : 124.869153,
+        "message" : "Laboratory 2"
     },
 
     {

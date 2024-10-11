@@ -43,8 +43,10 @@
           <a class="nav-link" href="applet-2.html">Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+          <a class="nav-link" href="applet-2.html">Attendance</a>
+          <li class="nav-item">
+            <a class="nav-link" href="applet-5.html">Search Bar</a>
+          </li>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -98,11 +100,11 @@ class LeafletMap {
 
 const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
 
-
+/*
 myMap.addMarker(8.359735, 124.869206, 'CCS Faculty Office');
 myMap.addMarker(8.359639,124.869179, 'CCS Laboratory 1');
 myMap.addMarker(8.359554,124.869153, 'CCS Laboratory 2');
-
+*/
 
 myMap.loadMarkersFromJson('applet-2.json');
 

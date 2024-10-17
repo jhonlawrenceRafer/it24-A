@@ -102,6 +102,5 @@ class WeatherService extends WeatherApp {
     }
 
 }
-
-
-const weatherApp = new WeatherService();
+const apiKey = ''; 
+const weatherApp = new WeatherService(apiKey);

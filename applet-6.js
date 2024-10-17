@@ -27,6 +27,17 @@ class WeatherApp{
     }
 }
 
+class WeatherService extends WeatherApp {
 
+    constructor() {
+        super();
+        this.apiKey = '';
+    }
+
+  
+   
+  
+
+}
 
 

@@ -8,29 +8,42 @@
     <title>Document</title>
 
     <style>
-      body{
-       background-color: cadetblue;
-         }
-     #form {
-              display: flex;
-           
-           margin: auto;
-              margin-top: 30px;
-          }
-          #query {
-              width: 1800px; 
-              height: 40px; 
-              padding: 10px; 
-              font-size: 16px; 
-          }
-    </style>
-
-<style>
-     .applet-3{
-              margin-top: 2rem;
-              margin-left: 2rem;
+        body{
+   background-color: cadetblue;
+     }
+        
+        .text-center {
+            color: rgb(255, 255, 255);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', Courier, monospace;
         }
-</style>
+        .form-control{
+            height: 3rem;
+            border-color: black;
+            margin-bottom: 1rem;
+
+        }
+        #addButton{
+            margin-top: 0.3rem;
+            border-color: rgb(0, 0, 0);
+        }
+        .CONTAINER{
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+            width: 80%;
+            height:auto;
+            margin-left: 7.5rem;
+            border-radius: 10px;
+            padding-top: 1rem;
+            box-shadow: 0 0 10px 10px rgba(247, 247, 247, 0.5);
+            padding-bottom: 0.3rem;
+        }
+        .completed{
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
 
 </head>
 
@@ -53,7 +66,7 @@
             <a class="nav-link" href="applet-2.html">Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="applet-2.html">Attendance</a>
+            <a class="nav-link" href="applet-4.html">Attendance</a>
             <li class="nav-item">
               <a class="nav-link" href="applet-5.html">Search Bar</a>
             </li>
@@ -74,19 +87,20 @@
     </div>
   </nav>
 
-<body>
 
-    <div class="applet-3">
-        <h1>Event Button Logger </h1>
-        <h3 class="logCount">Total Logs: </h3>
-        <br>
-        <button class="btn btn-primary"  id="logButton">Click Me</button>
-        <button class="btn btn-secondary"  id="clearButton">Clear</button>
-        <div id="logCount"></div>
-       
-        <div id="idContainer" style="width: 20rem;"></div>
-    
+<body>
+    <div class="CONTAINER">
+        <div class="container-fluid" style="max-width: 40%;">
+            <h2 class="text-center">To-Do List</h2>
+               <div class="input-group mb-4">
+                <textarea class="form-control" style="border-radius: 10px;" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
+                   <div class="input-group-append" style="margin-left: .5rem;">
+                      <button class="btn btn-primary" id="addButton">Save</button>
+                   </div>
+                      <ul id="todoList" class="list-group"></ul>
+            </div>
+        </div>
     </div>
-    <script src="applet-3.js"></script>
 </body>
+<script src="applet-7.js"></script>
 </html>
